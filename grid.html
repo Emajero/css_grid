@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /* display: flex;
+      justify-content: center;
+      place-items: center; */
+      height: 100vh;
+      background-color: rgb(219, 219, 219);
+    }
+    main {
+      padding: 2em;
+      border-radius: 3px;
+      width: 50%;
+      margin: auto;
+      background-color: black;
+      display: grid;
+      grid-template-areas:
+        "a a a b"
+        "c c d d"
+        "c c e e";
+      gap: 10px;
+    }
+    main div {
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 1em;
+    }
+    .imgcontent {
+      height: 100px;
+      width: 200px;
+      padding-top: 5px;
+    }
+    .column1 {
+      background-color: red;
+      grid-area: a;
+    }
+    .column2 {
+      background-color: orange;
+      grid-area: b;
+    }
+    .column3 {
+      background-color: green;
+      grid-area: c;
+    }
+    .column4 {
+      background-color: skyblue;
+      grid-area: d;
+    }
+    .column5 {
+      background-color: skyblue;
+      grid-area: e;
+    }
+    button {
+      padding: 2em;
+      border-radius: 30px;
+      background-color: darkcyan;
+      border: none;
+    }
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    header {
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <header>
+      <button type="button">
+        <a href="https://emajero.github.io/css_flexbox_grid/">CSS Flexbox</a>
+      </button>
+    </header>
+    <main>
+      <div class="column1">
+        <p>Header</p>
+        <img src="./icon-sedans.svg" alt="icon-sedans" />
+      </div>
+      <div class="column2">
+        <p>Notifications</p>
+        <img src="./icon-suvs.svg" alt="icon-suvs" />
+      </div>
+      <div class="column3">
+        <p>Side bar</p>
+        <img src="./icon-luxury.svg" alt="icon-luxury" />
+      </div>
+      <div class="column4">
+        <p>Content_1</p>
+        <img
+          src="./design/active-states.jpg"
+          alt="active-states"
+          class="imgcontent"
+        />
+      </div>
+      <div class="column5">
+        <p>Content_2</p>
+        <img
+          src="./design/desktop-design.jpg"
+          alt="desktop-design"
+          class="imgcontent"
+        />
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

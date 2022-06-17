@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: black; */
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+main {
+  background-color: hsl(0, 0%, 95%);
+  padding: 4em;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  border-radius: 2em;
+}
+.column1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+  /* width: 25%; */
+}
+.column2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+  /* width: 25%; */
+}
+.column3 {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+  /* width: 25%; */
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 5px;
+  font-family: "Lexend Deca", sans-serif;
+}
+h3 {
+  color: hsl(0, 0%, 95%);
+  padding: 1em;
+  font-family: "Big Shoulders Display", cursive;
+}
+button {
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+}
+button:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: white;
+}
+.column1 a {
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+  width: 25%;
+  font-family: "Lexend Deca", sans-serif;
+}
+.column2 a {
+  text-decoration: none;
+  color: hsl(184, 100%, 22%);
+  width: 25%;
+  font-family: "Lexend Deca", sans-serif;
+}
+.column3 a {
+  text-decoration: none;
+  color: hsl(179, 100%, 13%);
+  width: 25%;
+  font-family: "Lexend Deca", sans-serif;
+}
+.column1 a:hover {
+  color: hsl(0, 0%, 95%);
+}
+.column2 a:hover {
+  color: hsl(0, 0%, 95%);
+}
+.column3 a:hover {
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 375px) {
+  main {
+    margin-top: 40em;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 337px) {
+  main {
+    margin-top: 60em;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body {
+    width: 100%;
+  }
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+    overflow: hidden;
+  }
+}
